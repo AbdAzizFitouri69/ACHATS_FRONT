@@ -11,4 +11,6 @@ COPY . .
 
 EXPOSE 4200
 
-CMD  npm start
+CMD npm install -g http-server
+
+CMD  http-server .\dist\crudtuto-Front\ -p 4200
